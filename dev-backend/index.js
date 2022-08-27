@@ -24,7 +24,7 @@ mongoose
     "mongodb+srv://bharatgl:recon9976@cluster0.9dsyo7k.mongodb.net/appleute?retryWrites=true&w=majority"
   )
   .then(() => {
-    console.log("ho gya show output");
+    console.log("Connected");
   });
 // mongodb+srv://bharatgl:recon9976@cluster0.9dsyo7k.mongodb.net/appleute?retryWrites=true&w=majority
 
