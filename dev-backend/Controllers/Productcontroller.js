@@ -29,6 +29,18 @@ const getFood = async (req, res) => {
     res.status(400).json({ message: error.message });
   }
 };
+
+const getDish = async (req, res) => {
+  try {
+    const id = req.params.id;
+    const response = await productModel.findById(id);
+    res.status(200).json(response);
+  } catch (error) {
+    console.log(error);
+    res.status(400).json({ message: error.message });
+  }
+};
+
 const updateFood = () => {};
 const deleteFood = () => {};
-module.exports = { addFood, getFood, updateFood, deleteFood };
+module.exports = { addFood, getFood, updateFood, deleteFood, getDish };
